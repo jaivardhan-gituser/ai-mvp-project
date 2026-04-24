@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emergency Network</title>
+</head>
+<body>
+    <h1>Emergency Network</h1>
+
+    <form method="POST">
+        <input type="text" name="message" placeholder="Enter message" required>
+        <button type="submit">Send</button>
+    </form>
+
+    <h2>Messages</h2>
+    <ul>
+        {% for msg in messages %}
+            <li>{{ msg.text }} - {{ msg.priority }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
