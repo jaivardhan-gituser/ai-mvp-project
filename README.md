@@ -25,5 +25,10 @@ pip install -r requirements.txt
 python app.py
 
 ## Access
-Local: (http://127.0.0.1:5001) 
-Mobile: http://YOUR_IP:5001
+Open in browser:
+
+   Local (same device):
+   http://127.0.0.1:5001
+
+   Mobile (same WiFi):
+   http://YOUR_IP:5001
