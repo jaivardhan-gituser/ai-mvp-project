@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #dfe9f3, #ffffff);
+}
+
+/* App */
+.app {
+    width: 400px;
+    height: 600px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #075e54, #128c7e);
+    color: white;
+    padding: 15px;
+    font-weight: 600;
+}
+
+/* Chat */
+#chat-box {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: #f7f9fb;
+}
+
+/* Messages */
+.message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.normal {
+    background: #e4e6eb;
+}
+
+.high {
+    background: #ff4d4d;
+    color: white;
+}
+
+/* Input */
+.input-area {
+    display: flex;
+    padding: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+button {
+    margin-left: 5px;
+    border-radius: 20px;
+    background: #128c7e;
+    color: white;
+    border: none;
+}

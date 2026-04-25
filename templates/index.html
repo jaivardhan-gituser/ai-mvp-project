@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Emergency Network</title>
+    <title>Mesh Emergency Chat</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Emergency Network</h1>
 
-    <form method="POST">
-        <input type="text" name="message" placeholder="Enter message" required>
-        <button type="submit">Send</button>
-    </form>
+<div class="app">
 
-    <h2>Messages</h2>
-    <ul>
-        {% for msg in messages %}
-            <li>{{ msg.text }} - {{ msg.priority }}</li>
-        {% endfor %}
-    </ul>
+    <!-- Header -->
+    <div class="header">
+        🚨 Emergency Chat (2 Device Mode)
+    </div>
+
+    <!-- Chat -->
+    <div id="chat-box"></div>
+
+    <!-- Input -->
+    <div class="input-area">
+        <input type="text" id="message" placeholder="Type message...">
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="sendLocation()">📍</button>
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
 </body>
 </html>
